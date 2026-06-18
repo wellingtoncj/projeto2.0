@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSustentável • Agricultura que Transforma o Futuro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">🌱 AgroSustentável</div>
+            <ul class="nav-menu">
+                <li><a href="#o-que-e">O que é</a></li>
+                <li><a href="#praticas">Práticas</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#brasil">No Brasil</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#calculadora">Calculadora</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+            <button onclick="toggleAltoContraste()" class="btn-alto-contraste">🌗 Alto Contraste</button>
+        </div>
+    </nav>
+
+    <!-- HERO COM FUNDO ANIMADO -->
+    <header class="hero">
+        <div class="container hero-content">
+            <h1>Agricultura que cuida do planeta<br>e garante o futuro das próximas gerações</h1>
+            <p>Produza mais, preserve o meio ambiente e gere renda de forma responsável.</p>
+            <div class="hero-buttons">
+                <a href="#praticas" class="btn btn-large">Conhecer as Práticas</a>
+                <a href="#quiz" class="btn btn-large btn-outline">Testar Conhecimento</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- O QUE É (DETALHADO) -->
+    <section id="o-que-e" class="section">
+        <div class="container">
+            <h2>O que é Agricultura Sustentável?</h2>
+            <div class="rich-text">
+                <p>A agricultura sustentável é um modelo de produção que busca atender às necessidades atuais de alimentos sem comprometer a capacidade das gerações futuras. Ela equilibra três pilares essenciais: <strong>ambiental</strong>, <strong>econômico</strong> e <strong>social</strong>.</p>
+                
+                <div class="pilares-grid">
+                    <div class="pilar-card">
+                        <h4>🌍 Ambiental</h4>
+                        <p>Preservação do solo, água, biodiversidade e ecossistemas.</p>
+                    </div>
+                    <div class="pilar-card">
+                        <h4>💰 Econômico</h4>
+                        <p>Renda justa e viabilidade para o produtor rural.</p>
+                    </div>
+                    <div class="pilar-card">
+                        <h4>👨‍🌾 Social</h4>
+                        <p>Melhoria da qualidade de vida no campo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRÁTICAS -->
+    <section id="praticas" class="section bg-light">
+        <div class="container">
+            <h2>Práticas de Agricultura Sustentável</h2>
+            <div class="grid-cards">
+                <div class="card" onclick="abrirModal(0)">
+                    <div class="card-icon">🌿</div>
+                    <h3>Rotação de Culturas</h3>
+                    <p>Alternar plantas diferentes no mesmo terreno ao longo do tempo.</p>
+                    <span class="saiba-mais">Saiba mais →</span>
+                </div>
+                <div class="card" onclick="abrirModal(1)">
+                    <div class="card-icon">💧</div>
+                    <h3>Irrigação Inteligente</h3>
+                    <p>Uso de gotejamento e sensores para economizar água.</p>
+                    <span class="saiba-mais">Saiba mais →</span>
+                </div>
+                <div class="card" onclick="abrirModal(2)">
+                    <div class="card-icon">🐄</div>
+                    <h3>Integração Lavoura-Pecuária</h3>
+                    <p>Combinar criação de animais com cultivo de plantas.</p>
+                    <span class="saiba-mais">Saiba mais →</span>
+                </div>
+                <div class="card" onclick="abrirModal(3)">
+                    <div class="card-icon">🌳</div>
+                    <h3>Agrofloresta</h3>
+                    <p>Plantar árvores junto com culturas agrícolas.</p>
+                    <span class="saiba-mais">Saiba mais →</span>
+                </div>
+                <div class="card" onclick="abrirModal(4)">
+                    <div class="card-icon">🪱</div>
+                    <h3>Compostagem e Adubação Verde</h3>
+                    <p>Transformar resíduos em adubo natural rico.</p>
+                    <span class="saiba-mais">Saiba mais →</span>
+                </div>
+                <div class="card" onclick="abrirModal(5)">
+                    <div class="card-icon">🦋</div>
+                    <h3>Controle Biológico</h3>
+                    <p>Usar inimigos naturais para controlar pragas.</p>
+                    <span class="saiba-mais">Saiba mais →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section id="beneficios" class="section">
+        <div class="container">
+            <h2>Benefícios Comprovados</h2>
+            <div class="grid-beneficios">
+                <div class="beneficio"><div class="numero">+35%</div><p>Produtividade do solo a longo prazo</p></div>
+                <div class="beneficio"><div class="numero">-50%</div><p>Consumo de água com irrigação eficiente</p></div>
+                <div class="beneficio"><div class="numero">-70%</div><p>Redução no uso de agrotóxicos</p></div>
+                <div class="beneficio"><div class="numero">🌱</div><p>Maior biodiversidade e saúde do ecossistema</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POR QUE IMPORTA NO BRASIL -->
+    <section id="brasil" class="section bg-light">
+        <div class="container">
+            <h2>Por que isso importa no Brasil?</h2>
+            <div class="rich-text">
+                <p>O Brasil é um dos maiores produtores de alimentos do mundo. No entanto, grande parte da nossa produção ainda utiliza modelos que degradam o solo e consomem muitos recursos naturais.</p>
+                <p>Adotar a agricultura sustentável no Brasil pode trazer benefícios enormes como:</p>
+                <ul>
+                    <li>Reduzir o desmatamento na Amazônia e Cerrado</li>
+                    <li>Aumentar a produtividade sem precisar abrir novas áreas</li>
+                    <li>Melhorar a qualidade da água e preservar nascentes</li>
+                    <li>Gerar mais empregos qualificados no campo</li>
+                    <li>Posicionar o Brasil como referência mundial em produção responsável</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- DICAS PRÁTICAS -->
+    <section id="dicas" class="section">
+        <div class="container">
+            <h2>Dicas Práticas para Começar Hoje</h2>
+            <div class="dicas-grid">
+                <div class="dica"><strong>1.</strong> Comece pequeno: teste rotação de culturas em 2 ou 3 talhões.</div>
+                <div class="dica"><strong>2.</strong> Faça análise de solo pelo menos uma vez por ano.</div>
+                <div class="dica"><strong>3.</strong> Mantenha o solo sempre coberto com palhada ou plantas de cobertura.</div>
+                <div class="dica"><strong>4.</strong> Invista em irrigação por gotejamento com sensores de umidade.</div>
+                <div class="dica"><strong>5.</strong> Plante árvores nativas nas bordas da propriedade.</div>
+                <div class="dica"><strong>6.</strong> Prefira controle biológico sempre que possível.</div>
+                <div class="dica"><strong>7.</strong> Capacite sua equipe com cursos de boas práticas sustentáveis.</div>
+                <div class="dica"><strong>8.</strong> Registre tudo o que você faz para aprender com os resultados.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCULADORA -->
+    <section id="calculadora" class="section bg-light">
+        <div class="container">
+            <h2>Calculadora de Impacto</h2>
+            <div class="calculadora-box">
+                <div class="input-group">
+                    <label>Quantos hectares você cultiva?</label>
+                    <input type="number" id="hectares" value="50">
+                </div>
+                <button onclick="calcularImpacto()" class="btn btn-large">Calcular Meu Impacto</button>
+                <div id="resultado-calculadora"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz" class="section">
+        <div class="container">
+            <h2>Teste seu Conhecimento</h2>
+            <p class="subtitle">Responda as 10 perguntas e descubra seu nível</p>
+            <div class="quiz-box">
+                <div class="quiz-progress"><div id="progress-bar"></div></div>
+                <div id="quiz-pergunta"></div>
+                <div id="quiz-opcoes"></div>
+                <button id="btn-proxima" onclick="proximaPergunta()" class="btn btn-large">Próxima Pergunta</button>
+                <div id="quiz-resultado"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p><strong>AgroSustentável</strong> — Conhecimento que transforma o campo brasileiro.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
