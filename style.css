@@ -1,0 +1,16 @@
+.hero {
+    background: linear-gradient(-45deg, #1b5e20, #2e7d32, #388e3c, #43a047);
+    background-size: 400% 400%;
+    animation: gradientMove 18s ease infinite;
+    color: white;
+    padding: 140px 20px;
+    text-align: center;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* (adicione o resto do CSS que eu te passei antes - navbar, cards, quiz, etc.) */
